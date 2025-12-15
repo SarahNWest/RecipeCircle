@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% if title %}
+        <title>{{ title }} - RecipeCircle</title>
+        {% else %}
+        <title>Welcome to RecipeCircle</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            RecipeCircle:
+            <a href="{{ url_for('index') }}">Home</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
