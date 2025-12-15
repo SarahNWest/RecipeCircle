@@ -13,13 +13,14 @@ A recipe sharing platform built with Flask where users can share their favorite 
 - **Follower Counts**: Display follower and following counts on profiles
 - **Anonymous Access**: Public profile viewing with prompts to login for social features
 - **Error Handling**: Custom 404 and 500 error pages
+- **Test Suite**: Comprehensive pytest suite with 17 tests covering User model and authentication (70% code coverage)
 
 ### 🚧 Coming Soon
 
 - Recipe creation and sharing
 - Personalized home feed (followed users' recipes when logged in)
 - Recipe discovery feed for anonymous users
-- Testing suite with pytest
+- Integration tests for profile and follower features
 
 ## Tech Stack
 
@@ -28,6 +29,7 @@ A recipe sharing platform built with Flask where users can share their favorite 
 - **Auth**: Flask-Login 0.6.3
 - **Forms**: Flask-WTF 1.2.2 with CSRF protection
 - **Migrations**: Flask-Migrate 4.1.0
+- **Testing**: pytest 9.0.2, pytest-cov 7.0.0
 
 ## Setup
 
@@ -50,10 +52,22 @@ A recipe sharing platform built with Flask where users can share their favorite 
    flask run
    ```
 
+## Testing
+
+Run the test suite:
+```bash
+pytest
+```
+
+Run tests with coverage report:
+```bash
+pytest --cov=app --cov-report=term-missing
+```
+
 ## Project Status
 
-**Current Milestone**: Milestone 3 Complete (Social Graph - Followers)  
-**Next Up**: Adding pytest test suite for existing functionality
+**Current Milestone**: Milestone 4 Complete (Testing Suite)  
+**Next Up**: Adding integration tests for profiles and follower features
 
 ### Development Progress
 
@@ -61,7 +75,7 @@ A recipe sharing platform built with Flask where users can share their favorite 
 - ✅ Milestone 1: User model & authentication
 - ✅ Milestone 2: Profiles & error pages
 - ✅ Milestone 3: Follower relationships & social features
-- ⏳ Milestone 4: Testing suite
+- ✅ Milestone 4: Testing suite (User model & authentication)
 - 📋 Milestone 5: Recipe model & feeds
 
 ---
