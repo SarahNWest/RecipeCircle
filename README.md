@@ -13,14 +13,13 @@ A recipe sharing platform built with Flask where users can share their favorite 
 - **Follower Counts**: Display follower and following counts on profiles
 - **Anonymous Access**: Public profile viewing with prompts to login for social features
 - **Error Handling**: Custom 404 and 500 error pages
-- **Test Suite**: Comprehensive pytest suite with 17 tests covering User model and authentication (70% code coverage)
+- **Test Suite**: Comprehensive pytest suite with 34 tests covering User model, authentication, profiles, and follower features (95% code coverage)
 
 ### 🚧 Coming Soon
 
 - Recipe creation and sharing
 - Personalized home feed (followed users' recipes when logged in)
 - Recipe discovery feed for anonymous users
-- Integration tests for profile and follower features
 
 ## Tech Stack
 
@@ -67,7 +66,7 @@ pytest --cov=app --cov-report=term-missing
 ## Project Status
 
 **Current Milestone**: Milestone 4 Complete (Testing Suite)  
-**Next Up**: Adding integration tests for profiles and follower features
+**Next Up**: Recipe model and CRUD operations
 
 ### Development Progress
 
@@ -75,7 +74,7 @@ pytest --cov=app --cov-report=term-missing
 - ✅ Milestone 1: User model & authentication
 - ✅ Milestone 2: Profiles & error pages
 - ✅ Milestone 3: Follower relationships & social features
-- ✅ Milestone 4: Testing suite (User model & authentication)
+- ✅ Milestone 4: Testing suite (34 tests, 95% coverage)
 - 📋 Milestone 5: Recipe model & feeds
 
 ---
