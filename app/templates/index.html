@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to RecipeCircle!</h1>
+    <h1>
+        {% if current_user.is_authenticated %}
+        Hi, {{ current_user.username }}!
+        {% endif %}
+        Welcome to RecipeCircle!
+    </h1>
     <p>Share and discover amazing recipes.</p>
 {% endblock %}
